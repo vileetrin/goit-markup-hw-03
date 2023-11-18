@@ -288,11 +288,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  width: calc((100% - 48px) / 3);
 }
 
 .our-portfolio-list-item {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
 }
 
 .apps {
@@ -346,6 +345,7 @@ img {
 
 .part-of-logo-footer {
   color: #f4f4fd;
+  display: inline-block;
 }
 
 .footer-text {
