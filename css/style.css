@@ -12,11 +12,42 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* ============HEADER=========== */
 .logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -25,6 +56,41 @@ ol {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  margin-right: 76px;
+}
+
+.header-nav {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding: 24px 0;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-list-item {
+  padding: 24px 0;
 }
 
 .part-of-logo-header {
@@ -35,7 +101,7 @@ ol {
   font-style: normal;
 }
 
-.header-link {
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -43,9 +109,9 @@ ol {
   color: #2e2f42;
 }
 
-.header-link:hover,
-.header-link:active,
-.header-link:focus {
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
   color: #404bbf;
 }
 
@@ -58,15 +124,19 @@ ol {
   color: #404bbf;
 }
 
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 0.02em;
-}
+/* ==========FIRST-SECTION========== */
 
 .first-section {
   background-color: #2e2f42;
 }
+
+.first-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .main-title {
   color: #fff;
   text-align: center;
@@ -77,6 +147,11 @@ h3 {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 496px;
+  margin-top: 187px;
+  margin-bottom: 49px;
 }
 
 .order-button {
@@ -87,7 +162,10 @@ h3 {
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
   color: #ffffff;
-  cursor: pointer;
+  border-radius: 4px;
+  border-color: #4d5ae5;
+  margin-bottom: 188px;
+  padding: 16px 32px;
 }
 
 .order-button:hover,
@@ -95,13 +173,40 @@ h3 {
   background-color: #404bbf;
 }
 
+/* ============ADVANTAGES============= */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  column-gap: 24px;
+}
+
 .advantages-title {
   color: #2e2f42;
+  margin-top: 120px;
 }
 
 .advantages-text {
   color: #434455;
+  width: 264px;
+  margin-bottom: 120px;
+  margin-top: 7px;
 }
+
+/* ============OUR-TEAM============= */
 
 .third-section {
   background-color: #f4f4fd;
@@ -115,10 +220,19 @@ h3 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 70px;
 }
 
 .our-team-list {
+  display: flex;
+  column-gap: 24px;
+  padding-bottom: 120px;
+}
+
+.our-team-list-item {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list-title {
@@ -128,6 +242,7 @@ h3 {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin-top: 30px;
 }
 
 .our-team-text {
@@ -136,7 +251,11 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  margin-top: 9px;
 }
+
+/* ============OUR-PORTFOLIO============ */
 
 .our-portfolio-title {
   color: #2e2f42;
@@ -146,6 +265,19 @@ h3 {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.our-portfolio-list-item {
+  border: 1px solid #e7e9fc;
+  width: 360px;
 }
 
 .our-portfolio-list-title {
@@ -154,7 +286,9 @@ h3 {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
 .our-portfolio-text {
@@ -162,7 +296,10 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
 .footer {
