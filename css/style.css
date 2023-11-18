@@ -273,6 +273,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  margin-bottom: 120px;
 }
 
 .our-portfolio-list-item {
@@ -302,8 +303,16 @@ img {
   margin-left: 16px;
 }
 
-.footer {
+/* ============FOOTER=========== */
+
+.main-footer {
   background: #2e2f42;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .logo-footer {
@@ -314,6 +323,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-top: 101.5px;
 }
 
 .part-of-logo-footer {
@@ -325,4 +335,6 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.32px;
+  width: 264px;
+  margin-bottom: 100px;
 }
